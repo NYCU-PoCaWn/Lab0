@@ -20,10 +20,6 @@ Because we need to create tunnel interface, we need to use privileged container 
 docker compose pull
 ```
 
-Note:
-
-Dangling images may be created during the build process. It is advised to remove them from time to time to free up disk space.
-
 ```bash
 docker rmi $(docker images -f "dangling=true" -q)
 ```
